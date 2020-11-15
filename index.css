@@ -1,12 +1,16 @@
 /* Global */
-body {
+/* body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
-}
+    height: 100vh; */
+/* } */
 
+* {
+    box-sizing: border-box;	
+  }
+  
 /* Nav */
 header {
     top: 0;
@@ -59,7 +63,7 @@ header nav li i {
 
 .header {
     height: 100vh;
-    background-color: liner-gradient(rgba(0,0,0,0,5),rgba(0,0,0,0,5)) seashell;
+    background-color: seashell;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -91,6 +95,12 @@ div ul {
 
 }
 
+.header-2-icons {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 .select-mountains {
     display: flex;
     flex-direction: row;
@@ -100,3 +110,42 @@ div ul {
     display: flex;
     flex-direction: row;
 }
+
+img {
+    max-width: 70%;
+    height: 15%;
+}
+.row-image-1 {
+    display: flex;
+}
+.row-image-2 {
+    display: flex;
+    clear: both;
+    content: "";
+}
+
+/* .column-pics-1 {
+    float: left;
+    flex: 5%;
+    padding: 1px;
+    width: 33%;
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+.column-1 {
+    flex: 1%;
+    /* padding: 5px; */
+}
+
+.column-2 {
+    flex: 1%;
+    /* padding: 5px; */
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
